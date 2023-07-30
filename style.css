@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: none;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(140deg, #b68cea, #b167df, #7c2ced);
+    padding: 10px;
+
+}
+
+.todo{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    margin: 50px auto 10px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-image-width: 10px;
+    align-content: center;
+
+}
+
+.todo h1{
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-bottom: 15px;
+  
+   /*text-align: center;*/
+}
+
+.todo h1 img{
+    width: 33px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(190, 189, 189);
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    background: #ed6f15;
+    color: #f0f0f0;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+ul li{
+    list-style: none;
+    font-size: 26px;
+    padding: 12px 8px 12px 50px;
+   
+    cursor: pointer;
+    position: relative;
+    margin-left: 1px;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 45%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    }
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #959393;
+
+}
